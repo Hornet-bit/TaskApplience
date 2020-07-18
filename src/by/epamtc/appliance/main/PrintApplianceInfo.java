@@ -1,6 +1,6 @@
-package by.tc.task01.main;
+package by.epamtc.appliance.main;
 
-import by.tc.task01.entity.Appliance;
+import by.epamtc.appliance.entity.Appliance;
 
 public class PrintApplianceInfo {
 	

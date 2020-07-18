@@ -1,4 +1,4 @@
-package by.tc.task01.entity.criteria;
+package by.epamtc.appliance.entity.criteria;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,7 +9,7 @@ public class Criteria {
 	private Map<String, Object> criteria = new HashMap<String, Object>();
 
 	public Criteria(String groupSearchName) {
-		this.groupSearchName = groupSearchName;
+		this.groupSearchName = groupSearchName;//работает с енамом, возвращает тип товара
 	}
 	
 	public String getGroupSearchName() {
@@ -18,6 +18,12 @@ public class Criteria {
 
 	public void add(String searchCriteria, Object value) {
 		criteria.put(searchCriteria, value);
+	}
+
+	public Object getValue(String key){
+
+		return criteria.get(key);
+
 	}
 	
 	// you may add your own code here

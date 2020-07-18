@@ -1,6 +1,6 @@
-package by.tc.task01.service.validation;
+package by.epamtc.appliance.service.validation;
 
-import by.tc.task01.entity.criteria.Criteria;
+import by.epamtc.appliance.entity.criteria.Criteria;
 
 public class Validator {
 	

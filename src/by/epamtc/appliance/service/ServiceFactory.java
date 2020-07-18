@@ -1,6 +1,6 @@
-package by.tc.task01.service;
+package by.epamtc.appliance.service;
 
-import by.tc.task01.service.impl.ApplianceServiceImpl;
+import by.epamtc.appliance.service.impl.ApplianceServiceImpl;
 
 public final class ServiceFactory {
 	private static final ServiceFactory instance = new ServiceFactory();

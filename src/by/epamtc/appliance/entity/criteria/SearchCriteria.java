@@ -1,7 +1,7 @@
-package by.tc.task01.entity.criteria;
+package by.epamtc.appliance.entity.criteria;
 
 public final class SearchCriteria {
-	
+
 	public static enum Oven{
 		POWER_CONSUMPTION, WEIGHT, CAPACITY, DEPTH, HEIGHT, WIDTH
 	}
@@ -25,7 +25,14 @@ public final class SearchCriteria {
 	public static enum Speakers{
 		POWER_CONSUMPTION, NUMBER_OF_SPEAKERS, FREQUENCY_RANGE, CORD_LENGTH
 	}
-	
+
+	public String[] getCriteries(String typeOfApp){
+
+		return null;
+	}
+
 	private SearchCriteria() {}
+
+
 }
 
