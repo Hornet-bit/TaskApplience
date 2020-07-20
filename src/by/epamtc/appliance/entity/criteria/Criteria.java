@@ -9,7 +9,7 @@ public class Criteria {
 	private Map<String, Object> criteria = new HashMap<String, Object>();
 
 	public Criteria(String groupSearchName) {
-		this.groupSearchName = groupSearchName;//работает с енамом, возвращает тип товара
+		this.groupSearchName = groupSearchName;
 	}
 	
 	public String getGroupSearchName() {

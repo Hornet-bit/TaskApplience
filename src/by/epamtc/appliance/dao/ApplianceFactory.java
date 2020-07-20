@@ -1,30 +1,46 @@
 package by.epamtc.appliance.dao;
 
+import by.epamtc.appliance.dao.impl.*;
+import by.epamtc.appliance.dao.inter.ApplianceFactoryDAO;
 import by.epamtc.appliance.entity.*;
+
+import java.util.List;
 
 public class ApplianceFactory {
 
-    public static Appliance createAppliance(ApplianceType applianceType){
-
+    public static ApplianceFactoryDAO createAppliance(String applianceType){
         switch (applianceType){
 
-            case OVEN:
-                return new Oven();
+            case "Oven":
 
-            case LAPTOP:
-                return new Laptop();
+                OvenFactory ovenFactory = new OvenFactory();
+                return ovenFactory;
 
-            case SPEAKERS:
-                return new Speakers();
 
-            case TABLET_PC:
-                return new TabletPC();
+            case "Laptop":
 
-            case VACUUM_CLEANER:
-                return new VacuumCleaner();
+                LaptopFactory laptopFactory = new LaptopFactory();
+                return laptopFactory;
 
-            case REFRIGERATOR:
-                return new Refrigerator();
+            case "Speakers":
+
+                SpeakersFactory speakersFactory = new SpeakersFactory();
+                return speakersFactory;
+
+            case "TabletPC":
+
+                TabletPCFactory tabletPCFactory = new TabletPCFactory();
+                return tabletPCFactory;
+
+            case "VacuumCleaner":
+
+                VacuumCleanerFactory vacuumCleanerFactory = new VacuumCleanerFactory();
+                return vacuumCleanerFactory;
+
+            case "Refrigerator":
+
+                RefrigeratorFactory refrigeratorFactory = new RefrigeratorFactory();
+                return refrigeratorFactory;
 
         }
 

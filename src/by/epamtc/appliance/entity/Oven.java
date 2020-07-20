@@ -1,5 +1,8 @@
 package by.epamtc.appliance.entity;
 
+import jdk.jshell.Snippet;
+
+import java.util.List;
 import java.util.Objects;
 
 public class Oven extends Appliance{
@@ -20,6 +23,11 @@ public class Oven extends Appliance{
         this.depth = depth;
         this.height = height;
         this.width = width;
+    }
+
+    public static List<Appliance> createListOfAppliance(){
+        //List<Appliance>
+        return null;
     }
 
     public String getPowerConsumption() {
